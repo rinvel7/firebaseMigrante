@@ -45,10 +45,10 @@ class FirebaseCtrl {
         this.listeners["userloginstarted"]();
       }
       if (anonymously) {
-        console.log("hola")
+       
         await signInAnonymously(this.auth);
       } else {
-        console.log("hola")
+       
         await signInWithPopup(this.auth, this.googleAuthProvider);
       }
     } catch (error) {
@@ -61,6 +61,7 @@ class FirebaseCtrl {
   }
   logOut() {
     this.auth.signOut();
+    window.location.href = "https://apoio-ao-migrante.vercel.app/"
   }
   onAuthChanged(user) {
     this.userID = user ? user.uid : undefined;
