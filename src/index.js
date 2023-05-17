@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
   firebaseCtrl.on("userauthchanged", async (user) => {
     if (user) {
       uiCtrl.removeLogin();
-      uiCtrl.updateUserImage(user.photoURL || "static/imgs/space-invaders.svg");
+      uiCtrl.updateUserImage(user.photoURL || "/imgs/space-invaders.svg");
       uiCtrl.showSpinner();
       const novel = await firebaseCtrl.getNovel();
       uiCtrl.updateNovel(novel);
