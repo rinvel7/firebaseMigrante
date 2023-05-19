@@ -5,7 +5,7 @@ const templateNovelPortion = (portion) => {
           portion.isOwner && portion.canDelete
             ? `<button class="delete-btn">
                 <span class="delete-label">
-                  Si pasa 1h o más despúes de publicar, ya no podrás eliminarlo
+                Se passar 1h ou mais após a postagem, você não poderá mais excluí-la
                 </span>🗑️
               </button>`
             : ""
