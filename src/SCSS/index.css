@@ -126,12 +126,14 @@ body .loading-container {
 }
 body .top-bar {
   display: flex;
+  background-color: #fff;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 5px 0px 5px;
+  padding: 20px 60px 0px 60px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 body .top-bar > :nth-child(1) {
-  width: 100px;
+  width: 200px;
   height: 85px;
   overflow: hidden;
 }
