@@ -42,13 +42,14 @@ body {
     color: #fff;
     justify-content: center;
     align-items: center;
+    text-align: center;
     z-index: 1;
     background-image: url("../assets/images/respeito.png");
     .login-buttons-container {
       .btn {
         cursor: pointer;
         display: block;
-        width: 100%;
+        width: 30%;
         padding: 20px 20px 20px 60px;
         background-image: url("../../static/imgs/google-original.svg");
         background-repeat: no-repeat;
@@ -56,18 +57,30 @@ body {
         background-position: 10% center;
         background-color: #fffcef;
         border: none;
+        margin-left: 35%;
         margin-bottom: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+       
         &.anonymous-log-in-btn {
           background-image: url("../../static/imgs/account.svg");
         }
       }
     }
   }
+
+.logo-img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+
+
   .loading-container {
     display: none;
   }
+
   .top-bar {
     display: flex;
     background-color: #fff;
@@ -76,7 +89,7 @@ body {
     padding: 20px 60px 0px 60px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     & > :nth-child(1) {
-      width: 200px;
+      width: 80px;
       height: 85px;
       overflow: hidden;
       img {
@@ -187,9 +200,40 @@ body {
     .login-view {
       display: block;
       padding: 20px;
-      img {
-        width: 100%;
-      }
+  
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+    .login-buttons-container  {
+      margin-top: 140px;
+     }
+  }
+
+
+@media screen and (max-width: 600px) {
+  img.logo-img  {
+    width: 92%;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  body .login-view 
+  .login-buttons-container 
+  .btn.anonymous-log-in-btn {
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px 60px;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  body .login-view 
+  .login-buttons-container 
+  .btn.google-log-in-btn  {
+    width: auto;
+    margin: auto;
+  } 
 }
